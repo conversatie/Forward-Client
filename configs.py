@@ -6,10 +6,10 @@ import heroku3
 
 class Config(object):
     # Get This From @TeleORG_Bot
-    API_ID = int(os.environ.get("6667465"))
-    API_HASH = os.environ.get("b3dcf78a9d2988aa4532139f50dd0e68")
+    API_ID = int(os.environ.get("API_ID", "6667465"))
+    API_HASH = os.environ.get("API_HASH", "b3dcf78a9d2988aa4532139f50dd0e68")
     # Get This From @StringSessionGen_Bot
-    STRING_SESSION = os.environ.get("BACdYvwjPp1LNXjlOV2nZStxrzZkbx3HfqxM4y-stGrrQbNUuqyHRrQjNSc0BFwiSCcl7X4AVUCZ5ZRTcStTIhtp4zg6Z9S_f4TgzAs835TsYFR_-3wULWQ8SSkIs5xrwKCI5HY3isYP2187tuGNWH1gXR6UDZ5HN3I_mE1qmp6JFtAS0HkptD_E3eNcXD4o9UYxUFxwxk7aaH205BMVdd7Xlg3oHDDtFrMKXSG8H5eQKMjqn3BG7j74P5eDRoPQMnm2rT1g1jy9kcUM3qpalBadROLqjZ5y9MjlZ5iasFhXIg9qhtjFnbNQi1amUiiN5XhErFW60ic_xAS1qTdRF7GdR-blRAA")
+    STRING_SESSION = os.environ.get("STRING_SESSION", "BACdYvwjPp1LNXjlOV2nZStxrzZkbx3HfqxM4y-stGrrQbNUuqyHRrQjNSc0BFwiSCcl7X4AVUCZ5ZRTcStTIhtp4zg6Z9S_f4TgzAs835TsYFR_-3wULWQ8SSkIs5xrwKCI5HY3isYP2187tuGNWH1gXR6UDZ5HN3I_mE1qmp6JFtAS0HkptD_E3eNcXD4o9UYxUFxwxk7aaH205BMVdd7Xlg3oHDDtFrMKXSG8H5eQKMjqn3BG7j74P5eDRoPQMnm2rT1g1jy9kcUM3qpalBadROLqjZ5y9MjlZ5iasFhXIg9qhtjFnbNQi1amUiiN5XhErFW60ic_xAS1qTdRF7GdR-blRAA")
     # Forward From Chat ID
     FORWARD_FROM_CHAT_ID = list(set(int(x) for x in os.environ.get("FORWARD_FROM_CHAT_ID", "-1001411256080").split()))
     # Forward To Chat ID
